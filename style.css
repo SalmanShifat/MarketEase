@@ -1,0 +1,70 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#2b2556;--dark:#3b3280;--primary:#5b52d6;--muted:#6b6880;--line:#e9e8f3}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fdf8f4 0,#f6f5fc 8%,#f4f4fc 40%,#eceafb 70%,#f1f0fb 100%);min-height:100vh}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.wrap{max-width:1300px;margin:0 auto;padding:0 93px}
+header{height:64px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.6);backdrop-filter:blur(8px);position:sticky;top:0;z-index:10}
+header .wrap{display:flex;align-items:center;height:100%}
+.logo{font-weight:700;font-size:18px;letter-spacing:-.3px;color:#1f1b3d}
+.search{margin-left:66px;width:360px;height:34px;border:1px solid var(--line);border-radius:8px;background:#fff;display:flex;align-items:center;padding:0 16px;justify-content:space-between}
+.search input{border:0;outline:0;background:none;font:inherit;font-size:12px;width:100%;color:var(--ink)}
+.search input::placeholder{color:#a3a1b5}
+.search svg{width:12px;height:12px;stroke:#8a88a0;fill:none;stroke-width:2}
+nav{margin-left:auto;display:flex;gap:34px;font-size:12px;font-weight:500;color:#2a2650}
+nav a:hover{color:var(--primary)}
+.icons{display:flex;align-items:center;gap:18px;margin-left:66px;font-size:12px;font-weight:500}
+.icons svg{width:18px;height:18px;stroke:#8a88a0;fill:none;stroke-width:1.5;cursor:pointer}
+.icons .acc{display:flex;align-items:center;gap:6px;cursor:pointer}
+.icons .acc svg{width:13px;height:13px;stroke:#2a2650}
+.hero{display:grid;grid-template-columns:1fr 604px;gap:0;padding-top:78px;align-items:start}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:0 14px;height:33px;border:1px solid var(--line);border-radius:20px;background:#fff;font-size:11px;font-weight:500;margin-top:14px}
+.badge i{color:#e8a13a;font-style:normal;font-size:11px}
+h1{font-size:54px;line-height:63px;font-weight:600;letter-spacing:-1.5px;margin-top:28px;color:#2b2556}
+h1 span{color:#6c4fd6}
+.hero p.sub{margin-top:26px;font-size:14px;line-height:25px;color:#6d6a82;max-width:480px}
+.btns{display:flex;gap:14px;margin-top:29px}
+.btn{height:45px;display:inline-flex;align-items:center;gap:10px;padding:0 21px;border-radius:8px;font-size:12px;font-weight:600;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.dark{background:#3a2f7d;color:#fff;box-shadow:0 8px 18px rgba(58,47,125,.3)}
+.btn.light{background:#fff;border-color:var(--line);color:#2a2650}
+.btn.prim{background:#5b52d6;color:#fff;box-shadow:0 8px 16px rgba(91,82,214,.3);height:42px}
+.btn svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:2}
+.card{height:418px;border-radius:20px;background:linear-gradient(145deg,#5c58d9 0,#4a42ab 50%,#3b3484 100%);box-shadow:0 24px 50px rgba(75,66,170,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding-bottom:10px}
+.card svg.bag{width:58px;height:58px;stroke:#fff;fill:none;stroke-width:3}
+.card h2{font-size:21px;font-weight:600;margin-top:22px}
+.card p{font-size:13px;color:#d9d7f5;margin-top:14px}
+.card .btn{margin-top:22px;height:40px;background:rgba(255,255,255,.14);border:0;color:#fff;padding:0 20px;box-shadow:none;border-radius:8px;background:#6a5fc0}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:105px}
+.feat{background:#fff;border-radius:10px;height:137px;text-align:center;padding-top:21px;box-shadow:0 4px 14px rgba(70,60,150,.08)}
+.feat .ic{width:46px;height:46px;border-radius:50%;background:#5b52d6;margin:0 auto 14px;display:grid;place-items:center;box-shadow:0 4px 10px rgba(91,82,214,.3)}
+.feat .ic svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:1.4}
+.feat b{display:block;font-size:13px;font-weight:600}
+.feat small{display:block;font-size:11px;color:#77758c;margin-top:6px}
+.fh{text-align:center;margin-top:34px}
+.fh h2{font-size:25px;font-weight:600}
+.fh p{font-size:13px;color:#6d6a82;margin-top:14px}
+.panel{background:#fff;border-radius:20px;margin-top:40px;padding:30px 35px 33px;text-align:center;box-shadow:0 8px 24px rgba(70,60,150,.08)}
+.ph{height:197px;border-radius:10px;background:#ebebfb;display:grid;place-items:center}
+.ph svg{width:84px;height:88px}
+.panel h3{font-size:18px;font-weight:600;margin-top:24px}
+.panel p{font-size:12px;color:#6d6a82;margin-top:14px}
+.panel .btn{margin-top:20px;padding:0 24px}
+footer{margin-top:40px}
+.cols{display:grid;grid-template-columns:363px 300px 363px 1fr;align-items:start}
+footer h4{font-size:13px;font-weight:600;margin-bottom:14px}
+footer li,footer .about,footer .ct li{font-size:11px;color:#6d6a82;margin-bottom:11px}
+footer li a:hover{color:var(--primary)}
+.about{line-height:17px;margin-top:-2px;max-width:270px}
+.soc{display:flex;gap:16px;margin-top:20px;font-size:11px;font-weight:600;color:#2a2650}
+.ct li{display:flex;gap:8px;align-items:center;font-size:11px}
+.ct li i{font-style:normal;font-size:8px;color:#8a88a0}
+.sub2{font-size:11px;color:#6d6a82;margin:20px 0 8px}
+.nl{display:flex;gap:6px}
+.nl input{flex:1;height:32px;border:1px solid var(--line);border-radius:4px;padding:0 10px;font:inherit;font-size:10px;background:#fff;outline:0}
+.nl button{height:32px;padding:0 12px;border:0;border-radius:4px;background:#f5a623;color:#fff;font:inherit;font-size:10px;font-weight:600;cursor:pointer}
+.copy{border-top:1px solid #dcdaec;margin-top:34px;padding:15px 0 12px;display:flex;justify-content:space-between;font-size:9px;color:#6d6a82}
+.copy b{color:#1f1b3d}
+.fab{position:fixed;right:20px;bottom:20px;width:42px;height:42px;border-radius:50%;background:#3b3484;border:0;display:grid;place-items:center;box-shadow:0 6px 16px rgba(59,52,132,.4);cursor:pointer}
+.fab::after{content:"";width:12px;height:12px;border-radius:50%;border:2px solid #fff;background:#fff;box-shadow:0 0 0 3px #3b3484 inset}
+@media(max-width:1000px){.wrap{padding:0 24px}.hero{grid-template-columns:1fr}.features{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr 1fr;gap:24px}nav,.search{display:none}.icons{margin-left:auto}h1{font-size:40px;line-height:48px}.card{margin-top:40px}}
